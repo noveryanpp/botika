@@ -7,8 +7,8 @@ import Positions from '../pages/Positions.vue'
 import EmployeeJobs from '../pages/EmployeeJobs.vue'
 
 const routes = [
-    { path: '/', component: Dashboard },
-    { path: '/login', component: Login, meta: { requiresAuth: true } },
+    { path: '/login', component: Login},
+    { path: '/', component: Dashboard, meta: { requiresAuth: true } },
     { path: '/employees', component: Employees, meta: { requiresAuth: true } },
     { path: '/divisions', component: Divisions, meta: { requiresAuth: true } },
     { path: '/positions', component: Positions, meta: { requiresAuth: true } },
